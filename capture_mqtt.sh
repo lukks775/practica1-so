@@ -7,8 +7,9 @@ read tiempo
 
 echo "iniciando captura de datos..."
 
+
 while true; do
-echo 'Payload: {"AmbientTemperature":20}'; sleep 1; done > mqtt_capture.log &
+echo "Payload: {\"AmbientTemperature\":$((RANDOM % 40))}"; sleep 1; done > mqtt_capture.log &
 
 PID=$!
 
