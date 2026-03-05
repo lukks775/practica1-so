@@ -17,3 +17,14 @@ for linea in lineas:
             pass
 
 print("nmero de mensajes encontrados:",len(datos))
+
+temperaturas = []
+for d in datos:
+    if "AmbientTemperature" in d:
+        temperaturas.append(d["AmbientTemperature"])
+plt.plot(temperaturas)
+plt.title("temperatura del sensor")
+plt.xlabel("tiempo")
+plt.ylabel("temperatura")
+plt.savefig("plots/temperatura.png")
+print("graficaa guardada en plots/temperatura.png")
