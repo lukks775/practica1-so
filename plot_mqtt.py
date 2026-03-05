@@ -28,3 +28,9 @@ plt.xlabel("tiempo")
 plt.ylabel("temperatura")
 plt.savefig("plots/temperatura.png")
 print("graficaa guardada en plots/temperatura.png")
+
+print("\ngrafica ASCII:\n")
+
+for t in temperaturas:
+    barras=int(t)
+    print("|" + "#" * barras)
