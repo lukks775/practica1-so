@@ -1,13 +1,14 @@
 #!/bin/bash
 
-echo "Script de captura MQTT"
+echo "script de captura MQTT"
 
-echo "Introduce el tiempo de captura en segundos:"
+echo "iintroduce el tiempo de captura en segundos:"
 read tiempo
 
 echo "Iniciando captura de datos..."
 
-while true; do echo 'Payload: {"AmbientTemperature":20}'; sleep 1; done > mqtt_capture.log &
+while true; do
+echo 'Payload: {"AmbientTemperature":20}'; sleep 1; done > mqtt_capture.log &
 
 PID=$!
 
