@@ -17,6 +17,10 @@ for linea in lineas:
             pass
 
 print("nmero de mensajes encontrados:",len(datos))
+if len(datos)==0:
+    print("no se encontraron datos en el log.")
+    print("asegurate de ejecutar primero el script Bash para capturar datos MQTT.")
+    exit()
 
 temperaturas = []
 for d in datos:
