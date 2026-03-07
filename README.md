@@ -1,6 +1,7 @@
 # Práctica 1 - Sistemas Operativos  
 ## Captura y visualización de datos con Bash y Python
 ##Estructura generada con IA
+
 https://github.com/lukks775/practica1-so
 
 ### Descripcion
