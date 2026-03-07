@@ -1,5 +1,6 @@
 # Práctica 1 - Sistemas Operativos  
 ## Captura y visualización de datos con Bash y Python
+##Estructura generada con IA
 
 ### Descripcion
 
@@ -60,6 +61,6 @@ Al finalizar el proceso se genera:
 
 ## Autores
 
-- Lucía Castellanos Paz  
+- Lucia Castellanos Paz  
 - Ander Zuazquita Pastor
 
