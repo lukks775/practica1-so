@@ -1,33 +1,65 @@
-# practica1-so
-# Práctica 1 - Sistemas Operativos
+# Práctica 1 - Sistemas Operativos  
+## Captura y visualización de datos con Bash y Python
 
-Automatización con Bash y Python para captura y visualización de datos MQTT.
+### Descripcion
 
-## Autor
-Nombre Apellidos
+En esta practica hemos desarrollado un sistema para la captura, almacenamiento y visualizacion de datos de sensores.
 
-## Descripción
-Este proyecto automatiza la captura de datos desde un broker MQTT,
-almacena la salida en un archivo log y posteriormente genera gráficas
-mediante un script Python.
+Se utiliza un script Bash para capturar datos y gestionar procesos, y un script Python para analizar los datos almacenados y generar representaciones graficas.
 
-## Estructura del proyecto
+El flujo de funcionamiento del sistema es el siguiente:
 
-- capture_mqtt.sh → Script Bash principal
-- plot_mqtt.py → Script Python para análisis y gráficas
-- mqtt_capture.log → Archivo de captura
-- plots/ → Carpeta de gráficas generadas
+1. El usuario ejecuta el script Bash.
+2. El script genera datos simulados de sensores en formato JSON.
+3. Los datos se almacenan en un archivo de log.
+4. Tras finalizar el tiempo de captura, el script ejecuta un programa Python.
+5. Python procesa los datos y genera una grafica de temperatura.
 
-## Requisitos
+---
 
-- Bash
-- Python 3
-- Librerías Python:
-  - matplotlib
-  - json
-  - re
+## Estructura del proyecto (dibujada con chatgpt)
 
-Instalación:
+```
+practica1-so/
+│
+├── capture_mqtt.sh      # Script Bash para capturar datos
+├── plot_mqtt.py         # Script Python para analizar datos
+├── mqtt_capture.log     # Archivo de log generado
+├── README.md
+├── informe.pdf
+│
+└── plots/
+    └── temperatura.png  # Gráfica generada
+```
 
-```bash
-pip install matplotlib
+---
+
+## Ejecucion del programa
+
+Dar permisos al script Bash:
+
+```
+chmod +x capture_mqtt.sh
+```
+
+Ejecutar el script:
+
+```
+./capture_mqtt.sh
+```
+
+El sistema solicita el tiempo de captura en segundos.
+
+Al finalizar el proceso se genera:
+
+- Archivo `mqtt_capture.log`
+- Grafica `plots/temperatura.png`
+- Visualizacion ASCII en la terminal
+
+---
+
+## Autores
+
+- Lucía Castellanos Paz  
+- Ander Zuazquita Pastor
+
